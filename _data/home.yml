@@ -1,9 +1,9 @@
 navbar_entries:
   - title: about
-    url: 
+    url: https://petervancleave.github.io/about/
 
   - title: contact
-    url: 
+    url: https://petervancleave.github.io/contact/
 
   - title: blog
     url: https://medium.com/@petervancleave1
