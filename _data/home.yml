@@ -1,10 +1,13 @@
 navbar_entries:
   - title: about
-    url: about
+    url: 
+
+  - title: contact
+    url: 
 
   - title: blog
     url: https://medium.com/@petervancleave1
-
+    
   - title: youtube
     url: 
 
