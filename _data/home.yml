@@ -3,10 +3,10 @@ navbar_entries:
     url: about
 
   - title: blog
-    url: blog
+    url: https://medium.com/@petervancleave1
 
-  - title: website
-    url: https://www.abhinav.co
+  - title: youtube
+    url: 
 
 project_entries:
   - title: Project 1
