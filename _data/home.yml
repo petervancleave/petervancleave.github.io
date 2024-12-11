@@ -4,9 +4,6 @@ navbar_entries:
 
   - title: contact
     url: https://petervancleave.github.io/contact/
-
-  - title: blog
-    url: https://medium.com/@petervancleave1
     
   - title: youtube
     url: 
