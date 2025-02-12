@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Van Cleave | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- for .ico file -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+</head>
+<body>
+
+    <!-- Background that scrolls naturally -->
+    <div id="background"></div>
+
+    <!-- Header with Name and Navigation -->
+    <header>
+        <div class="logo">Peter Van Cleave</div>
+        <a href="resume.pdf" download class="resume-button">Download CV</a>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="about" class="section">
+        <h1>About</h1>
+        <p>Welcome! I'm Peter Van Cleave, a cybersecurity enthusiast specializing in penetration testing, network security, and digital forensics.</p>
+    </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="section">
+    <h1>Recent Projects</h1>
+    <div class="projects-container">
+        <div class="project-card">
+            <div class="image-container">
+                <img src="project1.png" alt="Project 1">
+                <h2 class="title">Urban Cybersecurity Simulation</h2>
+            </div>
+            <div class="description">
+                <p>Project 1 Description.</p>
+                <a href="https://github.com/yourgithub/project1" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="image-container">
+                <img src="project2.png" alt="Project 2">
+                <h2 class="title">Project 2 Title</h2>
+            </div>
+            <div class="description">
+                <p>Project 2 Description.</p>
+                <a href="https://github.com/yourgithub/project2" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="image-container">
+                <img src="project3.png" alt="Project 3">
+                <h2 class="title">Project 3 Title</h2>
+            </div>
+            <div class="description">
+                <p>Project 3 Description.</p>
+                <a href="https://github.com/yourgithub/project3" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Tech Stack Section -->
+<section id="tech-stack" class="section">
+    <h1 class="section-title">Skills</h1>
+    <div class="tech-grid">
+        <div class="tech-card">
+            <h3>Security Knowledge</h3>
+            <div class="tech-list">
+                <span data-description="CIA Triad, Risk Management, Threat Modeling, Vulnerability Management, Security Architecture, Defense in Depth">Security Concepts</span>
+                <span data-description="TCP/IP, DNS, HTTP/HTTPS, Firewalls, VPNs, IDS/IPS (Suricata)">Networking Fundamentals</span>
+                <span data-description="Basic Cryptographic Concepts, Hashing Algorithms, Symmetric/Asymmetric Encryption">Cryptography</span>
+                <span data-description="Linux and Linux Command Line (Bash), Windows">Operating Systems</span>
+            </div>
+        </div>
+        <div class="tech-card">
+            <h3>Security Assessment & Testing</h3>
+            <div class="tech-list">
+                <span data-description="Node.js backend development">Node.js</span>
+                <span data-description="Express.js API development">Express</span>
+                <span data-description="Python scripting and backend">Python</span>
+                <span data-description="Django framework experience">Django</span>
+                <span data-description="PostgreSQL database knowledge">PostgreSQL</span>
+                <span data-description="MongoDB NoSQL database">MongoDB</span>
+            </div>
+        </div>
+        <div class="tech-card">
+            <h3>DFIR</h3>
+            <div class="tech-list">
+                <span data-description="Docker containerization">Docker</span>
+                <span data-description="AWS cloud services">AWS</span>
+                <span data-description="CI/CD pipelines">CI/CD</span>
+                <span data-description="Git version control">Git</span>
+                <span data-description="Linux server administration">Linux</span>
+                <span data-description="Nginx web server">Nginx</span>
+            </div>
+        </div>
+        <div class="tech-card">
+            <h3>Tools</h3>
+            <div class="tech-list">
+                <span data-description="VS Code for development">VS Code</span>
+                <span data-description="Postman API testing">Postman</span>
+                <span data-description="Figma for UI/UX design">Figma</span>
+                <span data-description="Jest for unit testing">Jest</span>
+                <span data-description="GitHub for version control">GitHub</span>
+                <span data-description="Vercel for deployment">Vercel</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h1>Contact</h1>
+        <p>Email: <a href="mailto:youremail@example.com">petervancleave1@gmail.com</a></p>
+
+        <p align="center">
+            <a href="https://x.com/maala3xx" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="petervancleave" height="30" width="40" /></a>
+            <a href="https://instagram.com/pvc.37" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="pvc.37" height="30" width="40" /></a>
+        </p>
+        
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let scrollPosition = window.scrollY * 0.3; // Adjust parallax speed
+            document.getElementById("background").style.transform = `translateY(${-scrollPosition}px)`;
+        });
+    </script>
+
+
+<script src="script.js"></script> <!-- Link to JavaScript file -->
+
+</body>
+</html>
