@@ -9,7 +9,7 @@ body, html {
 
 /* Default Header Styling */
 header {
-    position: fixed;  /* Initially absolute */
+    position: absolute;  /* Initially absolute */
     top: 0;
     left: 0;
     width: 100%;
