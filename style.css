@@ -1,0 +1,404 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Default Header Styling */
+header {
+    position: absolute;  /* Initially absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;  /* Smooth transition */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to grow */
+    display: flex;
+    justify-content: flex-end; /* Right-align the navigation */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between items */
+    margin-right: 60px; /* Adjust to bring the links inward from the edge */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.resume-button {
+    text-decoration: none;
+    background: #333333;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-left: 20px; /* Add spacing from your name */
+}
+
+.resume-button:hover {
+    background: #5c5a5af3; /* Darker hover effect */
+}
+
+/* Body & Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#background {
+    position: fixed;
+    top: -175px;
+    left: 0;
+    width: 100%;
+    height: 1400px; 
+    background-image: url('back1.png');
+    background-size: cover;
+    background-position: top center;
+    filter: blur(5px);
+    z-index: -1;
+    transition: transform 0.9s ease-out; /* Smoother transition */
+}
+
+
+
+/* Ensure content is long enough to scroll */
+#content {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency to blend with background */
+}
+
+
+/* Projects Section Styling */
+#projects {
+    padding: 40px 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Image and Title */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 60%;  /* Image takes 60% of the card */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%); /* This centers the title horizontally */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+
+/* Description Section */
+.description {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    z-index: 0;
+}
+
+.description p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* "View on GitHub" Button */
+.description a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #333333;
+    color: #ffffff !important; /* Force the color to be white */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.description a:hover {
+    background-color: #5c5a5af3;
+    color: #ffffff; /* Ensure text remains white on hover */
+}
+
+
+/* Section Styling */
+.section {
+    padding: 120px 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Project Cards */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Tech Stack */
+#tech-stack {
+    text-align: center;
+    padding: 100px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr)); /* Two columns */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsive: Stack everything in one column on smaller screens */
+@media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
+}
+
+.tech-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tech-list span {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Basic style for the skills list */
+.tech-list span {
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+    background: #333333;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.tech-list span:hover {
+    background: #5c5a5af3;
+}
+
+/* Tooltip style on hover */
+.tech-list span:hover::after {
+    content: attr(data-description); /* Uses the data-description attribute */
+    position: absolute;
+    left: 50%;
+    bottom: 120%; /* Shows it above the skill */
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Allow the text to wrap naturally */
+    font-size: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 10;
+    transition: opacity 0.3s ease-in-out;
+    min-width: 200px;  /* Minimum width for the tooltip */
+    max-width: 800px; /* Adjust to fit the content better */
+    line-height: 1.5; /* Provides better readability */
+    max-height: 500px; /* Limit the height of the tooltip */
+    overflow-y: auto;  /* Allow scrolling if the content overflows */
+    pointer-events: auto;
+}
+
+
+
+/* Contact */
+#contact p a {
+    color: rgb(180, 9, 9);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.abouthead {
+    background: rgb(255, 255, 255); /* Translucent white */
+    padding: 5px;
+    border-radius: 50px; /* Rounded corners */
+    max-width: 250px; /* Prevent it from stretching too wide */
+    margin: 20px auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.578); /* Translucent white */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Prevent it from stretching too wide */
+    margin: 20px auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+
+.rechead {
+    background: rgb(255, 255, 255); /* Translucent white */
+    padding: 5px;
+    border-radius: 50px; /* Rounded corners */
+    max-width: 500px; /* Prevent it from stretching too wide */
+    margin: 20px auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+.wiphead {
+    background: rgb(255, 255, 255); /* Translucent white */
+    padding: 5px;
+    border-radius: 50px; /* Rounded corners */
+    max-width: 500px; /* Prevent it from stretching too wide */
+    margin: 20px auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+.techead {
+    background: rgb(255, 255, 255); /* Translucent white */
+    padding: 5px;
+    border-radius: 50px; /* Rounded corners */
+    max-width: 300px; /* Prevent it from stretching too wide */
+    margin: 20px auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+.conhead {
+    background: rgb(255, 255, 255); /* Translucent white */
+    padding: 5px;
+    border-radius: 50px; /* Rounded corners */
+    max-width: 300px; /* Prevent it from stretching too wide */
+    margin: 20px auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+
+.concard {
+    background: rgba(255, 255, 255, 0.578); /* Translucent white */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 350px; /* Prevent it from stretching too wide */
+    margin: 20px auto; /* Center it horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
