@@ -22,5 +22,5 @@ https://github.com/petervancleave/ctf-writeups
 
 ## License
 
-MIT License - Free to use this template for your own blog! 
+MIT License - Free to use this template for your own website! 
 
